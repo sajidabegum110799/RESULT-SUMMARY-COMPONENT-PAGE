@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
+
+
+  <title>Results summary component</title>
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="result-card">
+      <h2>Your Result</h2>
+
+      <div class="marks-scored">
+        <b>76</b>
+        <p class="total-marks">of 100</p>
+      </div>
+
+      <h3>Great</h3>
+      <p class="total-marks-scored">You scored higher than 65% of the people who have taken these tests.</p>
+
+    </div>
+
+    <div class="summary-card">
+      <h2 class="summary">Summary</h2>
+
+      <div class="reaction-container">
+        <span class="red"><img src="assets/images/icon-reaction.svg" alt="reaction-icon">Reaction</span>
+        <p><b class="bold">80</b> / 100</p>
+      </div>
+
+      <div class="memory-container">
+        <span class="yellow"><img src="assets/images/icon-memory.svg" alt="memory-icon">Memory</span>
+        <p><b class="bold">92</b> / 100</p>
+      </div>
+
+      
+      <div class="verbal-container">
+        <span class="green"><img src="assets/images/icon-verbal.svg" alt="verbal-icon">Verbal</span>
+        <p><b class="bold">61</b> / 100</p>
+      </div>
+
+      
+      <div class="visual-container">
+        <span class="blue"><img src="assets/images/icon-visual.svg" alt="visual-icon">Visual</span>
+        <p><b class="bold">72</b> / 100</p>
+      </div>
+
+     <button class="button">Continue</button>
+      
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
