@@ -1,0 +1,533 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Hanken-Grotesk" sans-serif;
+    gap: 0.5rem;
+    margin-top: 5rem;
+}
+
+.result-card {
+    width: 23.00rem;
+    height: 32.00rem;
+    background: linear-gradient(to bottom,
+            hsl(252, 100%, 67%),
+            hsl(241, 81%, 54%));
+    border-radius: 20px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+h2 {
+    font-size: 1.50rem;
+    margin: 2rem auto;
+    color: hsl(241, 100%, 89%);
+}
+
+.marks-scored {
+    width: 12.50rem;
+    height: 12.50rem;
+    border-radius: 50%;
+    background: linear-gradient(to bottom,
+            hsla(256, 72%, 46%, 1),
+            hsla(241, 72%, 46%, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5rem;
+}
+
+.marks-scored b {
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.total-marks {
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+.total-marks-scored {
+    font-size: 1.13rem;
+    margin: 0.5rem 4.5rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.summary-card {
+    width: 23.00rem;
+    height: 32.00rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.summary {
+    font-size: 1.50rem;
+    font-weight: 700;
+    color: #303B59;
+    margin-left: 2rem;
+}
+
+.reaction-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20.00rem;
+    height: 3.50rem;
+    border-radius: 10px;
+    background-color: hsla(0, 100%, 67%, 0.2);
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.red {
+    color: hsl(0, 100%, 67%);
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.memory-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20.00rem;
+    height: 3.50rem;
+    border-radius: 10px;
+    background-color: hsla(30, 100%, 56%, 0.2);
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.yellow {
+    color: hsl(39, 100%, 56%);
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.verbal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20.00rem;
+    height: 3.50rem;
+    border-radius: 10px;
+    background-color: hsla(166, 100%, 37%, 0.2);
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.green {
+    color: hsl(166, 100%, 37%);
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.visual-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20.00rem;
+    height: 3.50rem;
+    border-radius: 10px;
+    background-color: hsla(234, 85%, 45%, 0.2);
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.blue {
+    color: hsl(234, 85%, 45%);
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.button {
+    width: 20.00rem;
+    height: 3.50rem;
+    border-radius: 2rem;
+    background-color: #303B59;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 1.12rem;
+    border: none;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        margin-top: 6rem;
+    }
+    .result-card {
+        width: 25.00rem;
+        height: 25.00rem;
+        margin-left: -1rem;
+    }
+    .marks-scored {
+        width: 10rem;
+        height: 10rem;
+        margin-left: 8rem;
+    }
+    .marks-scored b {
+        font-size: 4rem;
+    }
+    .total-marks {
+        font-size: 15px;
+    }
+    h3 {
+       font-size: 1.5rem;
+       padding: 1rem;
+    }
+    .total-marks-scored {
+        font-size: 1rem;
+        margin: 0.5rem 3.5rem;
+    }
+    .summary-card {
+        width: 25.00rem;
+        height: 25.00rem;
+    }
+    
+    .summary {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    .reaction-container {
+        width: 25.00rem;
+        height: 3.50rem;
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+    }
+    .memory-container {
+        width: 25.00rem;
+        height: 3.50rem;
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+    }
+    .visual-container {
+        width: 25.00rem;
+        height: 3.50rem;
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+    }
+    .verbal-container {
+        width: 25.00rem;
+        height: 3.50rem;
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+    }
+    .button {
+        width: 25.00rem;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .card {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .result-card {
+        width: 20.00rem;
+        height: 25.00rem;
+        margin-left: -1rem;
+    }
+    .marks-scored {
+        width: 10rem;
+        height: 10rem;
+        margin-left: 5rem;
+    }
+    .marks-scored b {
+        font-size: 4rem;
+    }
+    .total-marks {
+        font-size: 15px;
+    }
+    h3 {
+       font-size: 1.5rem;
+       padding: 1rem;
+    }
+    .total-marks-scored {
+        font-size: 1rem;
+        margin: 0.5rem 3.5rem;
+    }
+    .summary-card {
+        width: 25.00rem;
+        height: 25.00rem;
+    }
+    
+    .summary {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    .reaction-container {
+        width: 20.00rem;
+        height: 3rem;
+        margin-left: 1rem;
+    }
+    .memory-container {
+        width: 20.00rem;
+        height: 3rem;
+        margin-left: 1rem;
+    }
+    .visual-container {
+        width: 20.00rem;
+        height: 3rem;
+        margin-left: 1rem;
+    }
+    .verbal-container {
+        width: 20.00rem;
+        height: 3rem;
+        margin-left: 1rem;
+    }
+    .button {
+        width: 20.00rem;
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .card {
+        margin-top: 8rem;
+    }
+    .result-card {
+        margin-left: 2rem;
+    }
+    .summary {
+        margin-left: 3rem;
+    }
+    
+    .reaction-container {
+        width: 22.00rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .memory-container {
+        width: 22.00rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .visual-container {
+        width: 22.00rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .verbal-container {
+        width: 22.00rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .button {
+        width: 22.00rem;
+        font-size: 1rem;
+        height: 3rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+   
+
+}
+
+@media (max-width: 350px) {
+    .card {
+        margin-top: 3rem;
+    }
+    .result-card {
+        width: 18.00rem;
+        height: 21.00rem;
+        margin-left: -2rem;
+    }
+    h2 {
+        font-size: 1rem;
+        margin: 1.5rem auto;
+    }
+    .marks-scored {
+        width: 8rem;
+        height: 8rem;
+        margin-left: 5rem;
+    }
+    .marks-scored b {
+        font-size: 3rem;
+    }
+    .total-marks {
+        font-size: 15px;
+    }
+    h3 {
+       font-size: 1.2rem;
+       padding: 0.7rem;
+    }
+    .total-marks-scored {
+        font-size: 0.9rem;
+        margin: 0.5rem 3.5rem;
+    }
+    .summary-card {
+        width: 19.00rem;
+        height: 25.00rem;
+    }
+    .summary {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+    .reaction-container {
+        width: 17.00rem;
+        font-size: 1rem;
+        height: 2.5rem;
+        margin-left: -1rem;
+    }
+    .red {
+        font-size: 1rem;
+    }
+    .memory-container {
+        width: 17.00rem;
+        font-size: 1rem;
+        height: 2.5rem;
+        margin-left: -1rem;
+    }
+    .yellow {
+        font-size: 1rem;
+    }
+
+    .visual-container {
+        width: 17.00rem;
+        font-size: 1rem;
+        height: 2.5rem;
+        margin-left: -1rem;
+    }
+    .green {
+        font-size: 1rem;
+    }
+
+    .verbal-container {
+        width: 17.00rem;
+        font-size: 1rem;
+        height: 2.5rem;
+        margin-left: -1rem;
+    }
+    .blue {
+        font-size: 1rem;
+    }
+
+    .button {
+        width: 17.00rem;
+        font-size: 1rem;
+        height: 3rem;
+        margin-left: -1rem;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .card {
+        margin-top: 3rem;
+    }
+    .result-card {
+        width: 19.00rem;
+        height: 21.00rem;
+        margin-left: -2rem;
+    }
+    h2 {
+        font-size: 1rem;
+        margin: 1.5rem auto;
+    }
+    .marks-scored {
+        width: 7rem;
+        height: 7rem;
+        margin-left: 5rem;
+    }
+    .marks-scored b {
+        font-size: 3rem;
+    }
+    .total-marks {
+        font-size: 15px;
+    }
+    h3 {
+       font-size: 1.2rem;
+       padding: 0.7rem;
+    }
+    .total-marks-scored {
+        font-size: 0.8rem;
+        margin: 0.5rem 3rem;
+    }
+    .summary-card {
+        width: 19.00rem;
+        height: 25.00rem;
+    }
+    .summary {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    .reaction-container {
+        width: 18.00rem;
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+    .memory-container {
+        width: 18.00rem;
+        margin-left: 1rem;
+    }
+    .visual-container {
+        width: 18.00rem;
+        margin-left: 1rem;
+    }
+    .verbal-container {
+        width: 18.00rem;
+        margin-left: 1rem;
+    }
+    .button {
+        width: 18.00rem;
+        margin-left: 1rem;
+    }
+}
+
